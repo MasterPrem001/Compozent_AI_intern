@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="{{ bg_class }}">
+    <h1>Weather Details for {{ weather_info.city }}</h1>
+    <div class="weather-box">
+        <div class="weather-card">
+            <h3>{{ weather_info.city }}, {{ weather_info.country }}</h3>
+            <ul>
+                <li>Temperature: {{ weather_info.temperature }}°C</li>
+                <li>Weather Condition: {{ weather_info.weather_cond }}</li>
+                <li>Humidity: {{ weather_info.humidity }}%</li>
+            </ul>
+        </div>
+    </div>
+    <a href="/">Back to Home</a>
+</body>
+</html>
